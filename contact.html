@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact |Grinchofobie | Arteveldehogeschool | Sarah Vandepitte | New Media Design II</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+          Grinchofobie
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- de (nieuwe) bootstrap class 'ml-auto' zorgt voor alignering rechts. Zet die op het element 'navbar-nav'. Je kan trouwens meerdere navbar-nav elementen hebben in één navigatie -->
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">Over</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="donate.html">Doneer</a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="testimony.html">getuigenis</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link specialleke" href="contact.html">contact<span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+
+      </div>
+  </nav>
+  <!-- Nav bar -->
+  <div class='container'>
+    <div class="row">
+      <h1 class="center">Contacteer ons</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <img src="images/contact/gsm.png" class="img-fluid">
+        <h4>Telefoon</h4>
+        <p class="center">+32 494 44 00 14</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="images/contact/mail.png" class="img-fluid">
+        <h4>e-mail</h4>
+        <p class="center">info@grifobie.be</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="images/contact/Untitled-1.png" class="img-fluid">
+        <h4>chat</h4>
+        <p class="center">elke werkdag van 10 tot 19 uur</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="images/contact/facebook.png" class="img-fluid">
+        <h4>facebook</h4>
+        <a href="https://www.facebook.com/" class="fb center">volg ons</a>
+      </div>
+    </div>
+    <div class="row top">
+      <div class="col-md-8 col-sm-8">
+        <div style="width: 100%"><iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&height=300&hl=nl&q=Walkurenstraat%2C%2020+()&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/nl/maak-een-google-map/">Maak
+              een Google Map</a> van <a href="https://www.mapsdirections.info/nl/">Nederland Kaart</a></iframe></div><br />
+
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <h4>Adres</h4>
+        <p class="center">Grinchofobie bvba
+          <br>Walkurenstraat 20
+          <br>8800 Roeselare
+          <br>België
+          <br>BE0473 416 418</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" >
+    <div class="back">
+      <div class="row">
+        <div class="col-md-12">
+            <h1 class="cont">Contactformulier</h1>
+        </div>
+        
+      </div>
+    
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+              <input type="naam" class="form-control" id="naam" placeholder="Naam*">
+          </div>
+          <div class="col-md-6 col-sm-6">
+              <input type="e-mail" class="form-control" id="email" placeholder="E-mail*">
+          </div>
+        </div>
+        <div class="row">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <a class="btn btn-contact" href="donate.html" role="button">verzenden</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="row footer nopad">
+    <div class="col-md-2 col-sm-2 logo">
+      <img src="images/home/logo.png" alt="img-fluid">
+    </div>
+    <div class="col-md-10 col-sm-10">
+      <h6>© Sarah Vandepitte | Artevelde Hogeschool | New Media Design II | Stijn Anseel</h6>
+    </div>
+  </div>
+
+</body>
+
+</html>
