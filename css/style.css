@@ -261,6 +261,12 @@ a:hover {
   }
 }
 
+@media (min-width: 1000px) {
+  .big-banner {
+    height: 200%;
+  }
+}
+
 .pad {
   padding-bottom: 50px;
 }
