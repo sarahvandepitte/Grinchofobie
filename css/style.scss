@@ -179,21 +179,22 @@ a:hover {
         text-align: right;
     }
 
-
-    .hvrbox,
-    .hvrbox * {
-        box-sizing: border-box;
-    }
-
     .hvrbox {
         position: relative;
         display: inline-block;
         overflow: hidden;
         max-width: 100%;
         height: auto;
-        margin-bottom:8%;
+        margin-bottom:5%;
+        
     }
 
+    .hvrbox,
+    .hvrbox * {
+        box-sizing: border-box;
+    }
+
+  
     .hvrbox img {
         width: 100%;
     }
