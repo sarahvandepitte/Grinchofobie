@@ -15,8 +15,8 @@ $fontset3:'Rakkas',
 cursive;
 
 $breekpunt:576px;
-$breekpunt2:992px;
-$breekpunt3:768px;
+$breekpunt2:768px;
+$breekpunt3:992px;
 $breekpunt4:1200px;
 
 
@@ -32,26 +32,36 @@ $breekpunt4:1200px;
 
 h1 {
     font-family: $fontset1;
-    font-size: 60px;
+    font-size: 30px;
     color: $color6;
     text-transform: uppercase;
 
-    @media (max-width: $breekpunt2) {
+    @media (min-width: $breekpunt2) {
         font-size: 40px;
     }
 
-    @media (max-width: $breekpunt) {
-        font-size: 30px;
+    @media (min-width: $breekpunt3) {
+        font-size: 50px;
+    }
+    @media (min-width: $breekpunt4) {
+        font-size: 60px;
     }
 }
 
 h2 {
     font-family: $fontset1;
     color: $color2;
-    font-size: 35px;
+    font-size: 20px;
 
-    @media (max-width: $breekpunt) {
-        font-size: 20px;
+    @media (min-width: $breekpunt2) {
+        font-size: 30px;
+    }
+
+    @media (min-width: $breekpunt3) {
+        font-size: 35px;
+    }
+    @media (min-width: $breekpunt4) {
+        font-size: 40px;
     }
 }
 
@@ -59,14 +69,18 @@ h3 {
     font-family: $fontset1;
     text-transform: uppercase;
     color: $color6;
-    font-size: 40px;
+    font-size: 25px;
 
-    @media (max-width: $breekpunt2) {
+
+    @media (min-width: $breekpunt2) {
         font-size: 30px;
     }
 
-    @media (max-width: $breekpunt) {
-        font-size: 25px;
+    @media (min-width: $breekpunt3) {
+        font-size: 40px;
+    }
+    @media (min-width: $breekpunt4) {
+        font-size: 50px;
     }
 }
 
@@ -75,9 +89,15 @@ h4 {
     text-transform: uppercase;
     color: $color6;
     text-align: center;
-
-    @media (max-width: $breekpunt) {
-        font-size: 20px;
+    font-size:20px;
+    @media (min-width: $breekpunt2) {
+        font-size: 25px;
+    }
+    @media (min-width: $breekpunt3) {
+        font-size: 30px;
+    }
+    @media (min-width: $breekpunt4) {
+        font-size: 40px;
     }
 }
 
@@ -85,14 +105,7 @@ h5 {
     color: $color2;
     font-family: $fontset1;
     font-size: 30px;
-    font-size: 30px;
-
-}
-
-@media (max-width: $breekpunt) {
-    h6 {
-        font-size: 4px;
-    }
+    
 }
 
 p {
@@ -101,14 +114,17 @@ p {
     font-size: 16px;
     line-height: 22px;
 
-    @media (max-width: $breekpunt) {
-        font-size: 13px;
+    @media (min-width: $breekpunt2) {
+        font-size: 17px;
     }
 }
 
 a {
     color: $color6;
-
+    font-size: 16px;
+    @media (min-width: $breekpunt2) {
+        font-size: 17px;
+    }
 }
 
 a:hover {
@@ -180,6 +196,7 @@ a:hover {
         overflow: hidden;
         max-width: 100%;
         height: auto;
+        margin-bottom:5%;
     }
 
     .hvrbox img {
@@ -461,21 +478,21 @@ input[type=submit]:hover {
     }
 
     img {
-        height: 29pt;
+        height: 19pt;
 
-        @media(max-width: $breekpunt) {
-            height: 19pt;
+        @media(min-width: $breekpunt2) {
+            height: 29pt;
         }
     }
 
     h6 {
         color: $color3;
         text-align: right;
-        font-size: 12px;
+        font-size: 9px;
         line-height: 50pt;
 
-        @media (max-width: $breekpunt) {
-            font-size: 8px;
+        @media (min-width: $breekpunt3) {
+            font-size: 12px;
         }
     }
 
