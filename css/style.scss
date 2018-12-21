@@ -179,12 +179,6 @@ a:hover {
         text-align: right;
     }
 
-    .hvrbox {
-        @media (max-width: $breekpunt3) {
-            padding-bottom: 6%;
-        }
-       
-    }
 
     .hvrbox,
     .hvrbox * {
@@ -197,7 +191,7 @@ a:hover {
         overflow: hidden;
         max-width: 100%;
         height: auto;
-        margin-bottom:5%;
+        margin-bottom:8%;
     }
 
     .hvrbox img {
