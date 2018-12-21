@@ -17,13 +17,13 @@ h1 {
   text-transform: uppercase;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 992px) {
   h1 {
     font-size: 40px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   h1 {
     font-size: 30px;
   }
@@ -35,7 +35,7 @@ h2 {
   font-size: 35px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   h2 {
     font-size: 20px;
   }
@@ -48,13 +48,13 @@ h3 {
   font-size: 40px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 992px) {
   h3 {
     font-size: 30px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   h3 {
     font-size: 25px;
   }
@@ -67,7 +67,7 @@ h4 {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   h4 {
     font-size: 20px;
   }
@@ -80,7 +80,7 @@ h5 {
   font-size: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   h6 {
     font-size: 4px;
   }
@@ -93,7 +93,7 @@ p {
   line-height: 22px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   p {
     font-size: 13px;
   }
@@ -152,6 +152,12 @@ a:hover {
   text-align: right;
 }
 
+@media (max-width: 576px) {
+  .homehead .hvrbox {
+    padding-bottom: 6%;
+  }
+}
+
 .homehead .hvrbox,
 .homehead .hvrbox * {
   -webkit-box-sizing: border-box;
@@ -167,7 +173,7 @@ a:hover {
 }
 
 .homehead .hvrbox img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .homehead .hvrbox .hvrbox-layer_bottom {
@@ -254,7 +260,7 @@ a:hover {
   color: #f2edcd;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .big-banner {
     padding-top: 60%;
     height: 100%;
@@ -421,8 +427,26 @@ input[type=submit]:hover {
 }
 
 /*footer*/
-footer.foeter {
-  position: fixed;
+/*
+footer.foeter{
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    padding:0 25px;
+    bottom:0px;
+    width:100%;
+    height:60px;
+    background-color:rgb(240,240,240);
+  }
+  .linkerkant{
+    line-height:60px;
+  }
+  .rechterkant i{
+   margin-left:10px;
+   font-size:1.5em;
+   line-height:60px;
+  }*/
+.foeter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,47 +455,39 @@ footer.foeter {
           justify-content: space-between;
   padding: 0 25px;
   bottom: 0px;
-  width: 100%;
-  height: 60px;
-  background-color: #f0f0f0;
+  background-color: #7b1b13;
+  margin-top: 10%;
 }
 
-.linkerkant {
+.foeter .linkerkant {
   line-height: 60px;
 }
 
-.rechterkant i {
+.foeter .rechterkant i {
   margin-left: 10px;
   font-size: 1.5em;
   line-height: 60px;
 }
 
-img {
+.foeter img {
   height: 29pt;
 }
 
-@media (max-width: 600px) {
-  img {
+@media (max-width: 576px) {
+  .foeter img {
     height: 19pt;
   }
 }
 
-.footer {
-  background-color: #7b1b13;
-  height: 10%;
-  padding: 2%;
-  margin-top: 10%;
-}
-
-.footer h6 {
+.foeter h6 {
   color: #f2edcd;
   text-align: right;
   font-size: 12px;
-  line-height: 29pt;
+  line-height: 50pt;
 }
 
-@media (max-width: 600px) {
-  .footer h6 {
+@media (max-width: 576px) {
+  .foeter h6 {
     font-size: 8px;
   }
 }
